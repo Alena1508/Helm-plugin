@@ -1,1 +1,11 @@
-.breadcrumb-link.active { letter-spacing: 0px; }
+.breadcrumbs {
+  font-family: $font-semibold;
+}
+
+.breadcrumb-link {
+  font-size: 14px;
+}
+
+.breadcrumb-link.active {
+  letter-spacing: 0px;
+}

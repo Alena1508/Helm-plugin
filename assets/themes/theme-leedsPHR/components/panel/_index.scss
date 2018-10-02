@@ -27,10 +27,16 @@
 .panel-primary .panel-heading { margin-bottom: 0; }
 
 .panel-dashboard {
+
   .panel-heading {
     background: transparent;
     border: 0;
-    padding: 0;
+    padding: 0 0 0 14px;
+
+    @include respond-from(xs) {
+      padding: 0;
+    }
+
     margin-bottom: 16px;
     .panel-title {
       line-height: 20px;
@@ -59,9 +65,16 @@
   }
 }
 
+.panel-secondary {
+  border: none !important;
+}
 
 .panel-secondary .panel-control { padding: 5px; }
-.panel-body-inner { padding: 14px 10px; }
+.panel-body-inner {
+  padding: 14px 10px;
+  overflow: auto;
+  max-height: 600px;
+}
 
 //.panel-secondary .panel-control { padding: 21px 17px 23px 13px; }
 //.panel-body-inner { padding: 14px 17px 14px 13px; }
